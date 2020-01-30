@@ -1,5 +1,13 @@
 {
     "configurations": [
+        
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "window.Main",
+            "projectName": "Code_a7bd7f47"
+        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - Main",

@@ -1,23 +1,21 @@
-byte listLed[] = {2,3,4,5,6,7,8,9};
-byte countLed;
+int led = 6;
+int brightness = 0;
+int fadeAmount = 1;
 
 void setup(){
-  countLed = sizeof(listLed);
-  for(int i = 0; i < countLed; i++){
-    pinMode(listLed[i], OUTPUT);
-    digitalWrite(listLed[i],LOW);
-  }
+  pinMode(led,OUTPUT);
 }
 
 void loop(){
 
-  for(int i = 0;i < countLed; i++){
-    digitalWrite(listLed[i], HIGH);
-    delay(500);
-  }
+  analogWrite(led,brightness);
 
-   for(int i = 0; i < countLed; i++){
-    digitalWrite(listLed[i], LOW);
-    delay(500);
+  brightness = brightness + fadeAmount;
+
+  if(brightness <= 0 || brightness >= 80){
+    fadeAmount = -fadeAmount;
   }
+  
+
+  delay(40);
 }
