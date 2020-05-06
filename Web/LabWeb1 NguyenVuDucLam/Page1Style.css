@@ -1,0 +1,16 @@
+h1{
+    color: white;
+    text-align: center;
+    background-image: url('home.jpg');
+}
+
+table, th{
+            border:1 solid black;
+}
+h2{
+    color: orange;
+}
+ul{
+    color: purple
+
+}

@@ -10,6 +10,7 @@ def createGraph(size):
         graph[i] = supgraph
 
     return graph
+    
 def dijkstra(graph, start, stop):
     shortest_distance = {}
     predecessor = {}

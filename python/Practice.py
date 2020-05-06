@@ -4,7 +4,7 @@ def bala():
     y = int(input("input y:"))
     A = []
 
-    for i in range(x):
+    for i in range(x):                                                                                              
         temp = []
         for j in range(y):     
             element = i*j
