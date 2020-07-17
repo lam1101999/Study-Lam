@@ -1,1 +1,1 @@
-Practice langue and technology
+Practice language and technology
